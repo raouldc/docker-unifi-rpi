@@ -33,6 +33,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget && \
 
 RUN ln -s /var/lib/unifi /usr/lib/unifi/data
 EXPOSE 8080/tcp 8081/tcp 8443/tcp 8843/tcp 8880/tcp 3478/udp
+EXPOSE 8080/tcp 8081/tcp 8443/tcp 8843/tcp 8880/tcp 3478/udp 10001/udp 6789/tcp
+
 
 WORKDIR /var/lib/unifi
 
